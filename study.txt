@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">       引入bootstrap样式
+</head>
+<body>
+    <h1>g<small>asdas</small></h1>
+    <p>p1</p>
+    <p class="lead">p2</p>                                              强调
+    <p>p3</p>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+</body>
+</html>
+
+无序列表
+<ul>
+    <li>…</li>
+</ul>
+有序列表
+<ol>
+    <li>…</li>
+</ol>
+定义列表
+<dl>
+    <dt>…</dt>
+    <dd>…</dd>
+</dl>
+
+去点列表
+<ul class="list-unstyled">
+        <li>不带项目符号</li>
+        <li>不带项目符号</li>
+</ul>
+class="list-inline" 将列表变成水平显示
+class="dl-horizontal" 将dl变成水平显示
+
+表格
+<table class="table">
+	<tr><th></th></tr>
+	<tr><td></td></tr>
+</table>
+table class
+	table：基础表格
+	table table-striped：斑马线表格
+	table table-bordered：带边框的表格
+	table table-hover：鼠标悬停高亮的表格
+	table table-condensed：紧凑型表格
+	table table-responsive：响应式表格
+tr class
+	success 成功
+	active 当前活动
+	info 信息
+	warning 警告
+	danger 危险
+<code></code> 显示单行代码
+<pre></pre> 显示多块代码
+class="pre-scrollable" 大块代码滚动条显示
+<kbd></kbd> 显示用户通过键盘输入的内容
+<em></em> <i></i> 斜体
+<strong></strong> 强调标签
+
+文本样式
+<div class="text-muted">.text-muted 效果</div>
+<div class="text-primary">.text-primary效果</div>
+<div class="text-success">.text-success效果</div>
+<div class="text-info">.text-info效果</div>
+<div class="text-warning">.text-warning效果</div>
+<div class="text-danger">.text-danger效果</div>
+<p class="text-left">我居左</p>
+<p class="text-center">我居中</p>
+<p class="text-right">我居右</p>
+<p class="text-justify">我两端对齐</p>
