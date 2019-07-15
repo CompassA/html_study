@@ -1,3 +1,4 @@
+引入bootstrap依赖
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +15,7 @@
     <script src="lib/js/bootstrap.js"></script>
 </body>
 </html>
+
 
 无序列表
 <ul>
@@ -38,29 +40,34 @@ class="list-inline" 将列表变成水平显示
 class="dl-horizontal" 将dl变成水平显示
 
 表格
-<table class="table">
+    <table class="table">
 	<tr><th></th></tr>
 	<tr><td></td></tr>
-</table>
-table class
+    </table>
+        table class
 	table：基础表格
 	table table-striped：斑马线表格
 	table table-bordered：带边框的表格
 	table table-hover：鼠标悬停高亮的表格
 	table table-condensed：紧凑型表格
 	table table-responsive：响应式表格
-tr class
+          tr class
 	success 成功
 	active 当前活动
 	info 信息
 	warning 警告
 	danger 危险
+
+
 <code></code> 显示单行代码
 <pre></pre> 显示多块代码
 class="pre-scrollable" 大块代码滚动条显示
+
 <kbd></kbd> 显示用户通过键盘输入的内容
 <em></em> <i></i> 斜体
 <strong></strong> 强调标签
+
+
 
 文本样式
 <div class="text-muted">.text-muted 效果</div>
@@ -73,3 +80,67 @@ class="pre-scrollable" 大块代码滚动条显示
 <p class="text-center">我居中</p>
 <p class="text-right">我居右</p>
 <p class="text-justify">我两端对齐</p>
+
+
+表单
+<form>
+        <fieldset>
+            <legend> 登录</legend>
+	<div class="form-group">
+                <label for="txtAccount">账号:</label>
+                <input type="text" name="account" id="txtAccount" maxlength="16" title="请输入账号"/>
+                </div>
+                 <label for="txtPassword">密码:</label>
+                <input type="password" name="password" id="txtPassword" maxlength="16" title="请输入密码" />
+                <label>身份:</label>
+                <input type="radio" name="role" value="2"/>管理员
+                <input type="radio" name="role" value="1" checked="checked"/>借阅者
+                <br />
+                <input type="radio" name="saveInfo" id="rdoSave" value="needSave">
+                <label for="rdoSave">保存登录信息</label>
+                <br />
+                <input type="button" value="登录" align="center" id="btnSubmit"/>
+                <input type="button" value="注册" align="center" id="btnSignUp"/>
+        </fieldset>
+    </form>
+
+
+        form class : form-group  form-inline
+        input class : form-control
+
+selectc
+
+    <select id="admin_selectType">
+        <option value="1" selected>计算机</option>
+        <option value="2">文学</option>
+        <option value="3">历史</option>
+        <option value="4">数学</option>
+        <option value="5">物理</option>
+        <option value="6">天文</option>
+        <option value="7">经济学</option>
+    </select>
+
+    获取选择的文字$("#admin_selectType").find("option:selected").text()
+    获取选择列的value $("#admin_selectType").val()
+
+
+文本域
+<textarea class="form-control" rows="3"></textarea>
+
+
+bootstrap checkbox
+<div>
+    <label class="checkbox">
+        <input type="checkbox" name="xxx" value="xxx"> 
+    </label>
+</div>
+
+
+bootstrap radio
+<div>
+    <label class="radio">
+        <input type="radio" name="xxx" value="xxx"> 
+    </label>
+</div>
+水平排列  radio-inline checkbox-inline	
+获取radio的值 var gender = $("input[name='xxxxx']:checked").val();
